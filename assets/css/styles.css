@@ -23,8 +23,13 @@
     color: teal;
 }
 
+
 .bg-teal {
     background-color: teal;
+}
+
+.bg-lightgrey {
+    background-color: lightgrey;
 }
 
 .border-teal {
