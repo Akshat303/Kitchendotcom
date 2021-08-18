@@ -1,5 +1,7 @@
+/* Price_Estimator */
+
 #steps {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)) , url(/assets/img/mkitchen1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)) , url(/assets/img/mkitchen2.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,6 +17,92 @@
     box-shadow: 2px 2px white;
 }
 
+/* Teal Bg, White Container */
+#layout {
+    background-image: linear-gradient(teal, teal);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 30px 0px teal);
+}
+#select {
+    background-color: white;
+    color: teal;
+    border-radius: 25px;
+} 
+
+/* Select_Layout */
+
+
+input[type='radio']:after {
+width: 30px;
+height: 30px;
+border-radius: 15px;
+top: -5px;
+left: -5px;
+position: relative;
+background-color: white;
+content: '';
+display: inline-block;
+visibility: visible;
+border: 2px solid teal;
+}
+
+input[type='radio']:checked:after {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    top: -5px;
+    left: -5px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 10px solid teal;
+}
+
+#layout .card {
+    border: 2px solid teal;
+}
+
+#layout .card:hover {
+    border: 5px solid teal;
+    box-shadow: 5px 5px 10px teal;
+}
+
+#layout .card:hover .card-footer {
+    border-top: 2px solid black;
+}
+#layout .card-footer {
+    border-top: 2px solid grey;
+}
+
+/* Customer_Details */
+
+#details {
+    background-image: linear-gradient(white, white);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 30px 0px teal);
+}
+#kitchen1 {
+    box-shadow: -20px 20px teal;
+}
+
+/* Select Shapes(L, U, Straight, Parallel)  */
+
+#shapes {
+    background-color: lemonchiffon;
+    color: teal;
+    border-radius: 25px;
+}
+
+
+/* Colors */
 .text-teal {
     color: teal;
 }
@@ -33,7 +121,7 @@
 }
 
 .border-teal {
-    border: 2px solid teal;
+    border: 3px solid teal;
 }
 
 .btn-opacity {
