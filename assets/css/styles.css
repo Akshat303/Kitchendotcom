@@ -32,6 +32,12 @@
     border-radius: 25px;
 } 
 
+.white-container {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
 /* Select_Layout */
 
 
