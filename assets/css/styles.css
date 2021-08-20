@@ -18,6 +18,16 @@
 }
 
 /* Teal Bg, White Container */
+
+#main-theme {
+    background-image: url('/assets/img/bg-image.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 60px 0px white);
+}
+
 #layout {
     background-image: url('/assets/img/bg-image.jpg');
     background-attachment: fixed;
