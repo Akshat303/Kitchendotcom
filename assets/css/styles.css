@@ -48,7 +48,7 @@
     border-radius: 25px;
 }
 
-/* Select_Layout */
+/* Inputs */
 
 
 input[type='radio']:after {
@@ -72,13 +72,41 @@ input[type='radio']:checked:after {
     top: -5px;
     left: -5px;
     position: relative;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="teal" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/></svg>');
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+
+input[type='checkbox']:after {
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: -5px;
+    position: relative;
     background-color: white;
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 10px solid teal;
-}
+    border: 2px solid teal;
+    }
+    
+input[type='checkbox']:checked:after {
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: -5px;
+    position: relative;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="teal" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/></svg>');
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    }
 
+/* Select_Layout */
 
 #layout .card {
     border: 2px solid teal;
