@@ -79,6 +79,7 @@ input[type='radio']:checked:after {
     border: 10px solid teal;
 }
 
+
 #layout .card {
     border: 2px solid teal;
 }
