@@ -31,7 +31,7 @@
                 <div class="container-lg col-lg-6 col-sm-12 p-3 text-dark">
                     <a href="#" class="btn btn-lg d-block bg-light border-teal py-5 px-3 rounded" role="button">
                         <div class="form-check float-start">
-                            <input class="form-check-input" type="radio" name="loft_type" id="fc_loft">
+                            <input class="form-check-input" type="radio" name="loft_type" id="custom_loft" onclick="enable()">
                         </div>
                         <h3 class="px-5 text-start">Custom Loft</h3>
                         <div class="row">
@@ -39,9 +39,8 @@
                                 <label class="form-label">Feet:</label>
                             </div>
                             <div class="form-check col-8 text-start">
-                                <select class="form-select text-teal border-teal shadow-none">
-                                    <option selected disabled></option>
-                                    <option value="1">1</option>
+                                <select class="form-select text-teal border-teal shadow-none" id="loft-select" disabled>
+                                    <option selected value="1">1</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                     <option value="5">5</option>
@@ -60,7 +59,7 @@
                 <div class="container-lg col-lg-6 col-sm-12 p-3">
                     <a href="#" class="btn btn-lg d-block bg-light border-teal py-5 px-3 rounded" role="button">
                         <div class="form-check float-start">
-                            <input class="form-check-input" type="radio" name="loft_type" id="2ft_loft">
+                            <input class="form-check-input" type="radio" name="loft_type" id="2ft_loft" onclick="disable()">
                         </div>
                         <h3 class="px-5 text-start">2 Feet Loft <span class="nav-link small">(Recommended)</span></h3>
                     </a>   
@@ -69,7 +68,7 @@
                 <div class="container-lg col-lg-6 col-sm-12 p-3">
                     <a href="#" class="btn btn-lg d-block bg-light border-teal py-5 px-3 rounded" role="button">
                         <div class="form-check float-start">
-                            <input class="form-check-input" type="radio" name="loft_type" id="no_loft">
+                            <input class="form-check-input" type="radio" name="loft_type" id="no_loft" onclick="disable()">
                         </div>
                         <h3 class="px-5 text-start">No Loft</h3>
                     </a>   
@@ -95,5 +94,7 @@
 </div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- For Custom Loft -->
+<script src="/assets/js/custom_loft.js"></script>
 </body>
 </html>
