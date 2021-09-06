@@ -1,7 +1,7 @@
 
 #first {
 
-  background: white;
+  background: url(/projectgallery/img/gallery_bg11.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -312,6 +312,12 @@ hr
   background-size: cover;
 }
 
+#jhu {
+  background: url(/projectgallery/img/jhu.png);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: top right;
+}
 
 #head {
   position: absolute;

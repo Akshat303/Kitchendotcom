@@ -18,17 +18,21 @@
 <body>
   <div id="first">
 
-    <div class="container" id="F_section">
+    <div class="row justify-content-center p-3 m-3">
+
+      <div class="col-lg-2 justify-content-start col-12">
         <div class="d-flex">
-            <div class="line"></div>
-        </div>
-        <h1 class="h1 display-1">Project Gallery</h1>
+          <div class="line"></div>
+      </div>
+      <h1 class="h1 display-1">Project Gallery</h1>
+      </div>
 
     </div>
 
     <!-- slide iamge section start -->
 
-    <div class="slide hi-slide">
+    <div class="col-12">
+      <div class="slide hi-slide">
         <div class="hi-prev "></div>
         <div class=" bi bi-arrow-right hi-next "></div>
         <i class="bi bi-arrow-right"></i>
@@ -63,46 +67,54 @@
             </li>
         </ul>
     </div>
+    </div>
+    
 
   </div>
 
 
     <!-- Professinal Designers start -->
   <div id="first2">
-    <div class="row justify-content-center p-3 m-3 g-3 py-5 my-5 text-white">
-      <div class="col-6">
-        <h3 class="h3">Creative Solution By <br> Professinal Designer</h3>
-        <p class="lead" >Venenatis, vestibulum proin at condimentum. Diam tristique sapien ut
-            ipsum diam in ac sollicitudin. Tristique sociis vehicula ut lorem. Non nunc, leo eleifend dignissim
-            nisi, enim. Ut pellentesque mauris, in magnis in tempus ridiculus.</p>
-      </div>
-      <div class="col-6">
-        <img src="/projectgallery/img/proDes1.png" alt="Profssinal Image" >
-      </div>
-    </div>
-        
+    
 
+      <div class="py-3 my-3">
+        <div class="row justify-content-center p-5 m-5 g-5 text-white">
+          <div class="col-lg-7 col-12">
+            <h3 class="h3 py-3 my-3">Creative Solution By <br> Professinal Designer</h3>
+            <p class="lead py-3 my-3" >Venenatis, vestibulum proin at condimentum. Diam tristique sapien ut
+                ipsum diam in ac sollicitudin. Tristique sociis vehicula ut lorem. Non nunc, leo eleifend dignissim
+                nisi, enim. Ut pellentesque mauris, in magnis in tempus ridiculus.</p>
+          </div>
+          <div class="offset-lg-1 col-lg-4 col-12">
+            <img src="/projectgallery/img/proDes1.png" class="w-100" alt="Professinal Image" >
+          </div>
+        </div>
+      </div>
+      
   </div>
 
 
 
 
-    <div id="first3" class="">
+    <div id="first3">
 
-      <div class="row justify-content-center p-3 m-3 g-3">
-        <div class="col-6">
-          <h3 class="h3"> Here’s what they have to say</h3>
-          <div class=""> 
-          <div class="embed-responsive embed-responsive-4by3">
-                  <iframe width="420" height="315" class="embed-responsive-item akvideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          </div>    
-          </div>
-      </div>
-  
-      <div class="col-6">
-          <h3 class="h3">Modern Kitchen <br> </h3>
-          <p class="lead"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui pretium interdum sagittis sagittis faucibus. Et sit viverra pellentesque nulla ipsum. Eu, cursus pellentesque nunc proin urna justo est dignissim. Aliquet et cursus aliquet feugiat rhoncus, nunc et id. At pellentesque est nibh ultricies arcu in. Quis lectus arcu dictum mi. Commodo.</b></p>
-      </div>
+      <div class="p-3 m-3">
+        <div class="row justify-content-center p-3 m-3 g-3">
+          <div class="col-12 justify-content-start">
+            <h3 class="h3 text-success"> We'll let our clients do the talking</h3>
+            <h6 class="text-success">Here’s what they have to say</h6>
+        </div>
+    
+        <div class="col-lg-6 col-12 text-center">
+          <div class="embed-responsive embed-responsive-4by3 w-100">
+            <iframe width="420" height="315" class="embed-responsive-item akvideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>    
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <h3 class="h3 text-success">Modern Kitchen <br> </h3>
+            <p class="lead py-3 my-3"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui pretium interdum sagittis sagittis faucibus. Et sit viverra pellentesque nulla ipsum. Eu, cursus pellentesque nunc proin urna justo est dignissim. Aliquet et cursus aliquet feugiat rhoncus, nunc et id. At pellentesque est nibh ultricies arcu in. Quis lectus arcu dictum mi. Commodo.</b></p>
+        </div>
+        </div>
       </div>
 
     </div>
@@ -111,12 +123,11 @@
 
     <!-- Second Page -->
     <div id="second">
-      <div class="container">
-        <h1 class="h2"><b>Ongoing Projects</b></h1></div>
       
-        <div id="">
-          <img class="img-fluid" id="img1" src="./img/jhu.png" alt="Design Image">
-        </div> 
+      
+    <div id="jhu">
+      
+        <h1 class="h2 p-3 m-3 py-5 my-5 text-success"><b>Ongoing Projects</b></h1>
       
       <div class="row">
         <div class="col-7" ><div class="card firstC">
@@ -130,6 +141,8 @@
           <p class="lead CP" > This kitchen by Romanek Design Studio proves that balance is everything. The dark, moody tile walls, sleek backsplash.</p>
         </div></div>
       </div>
+
+    </div> 
       <!-- second card -->
       <div class="row">
         <div class="col-5 SFC"><h1 class="h1 text-capitalize SCH">Molloy Kitchen Remodel</h1><div class="badge text-wrap ">
@@ -199,9 +212,8 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
