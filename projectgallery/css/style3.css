@@ -307,9 +307,17 @@ hr
 
 #second
 {
-  background: url(/projectgallery/img/gallery_bg2.png);
+  background: url(/projectgallery/img/gallery_bg21.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#second2
+{
+  background: url(/projectgallery/img/gallery_bg22.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
 }
 
 #jhu {
