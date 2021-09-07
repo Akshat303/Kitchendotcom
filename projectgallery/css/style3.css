@@ -460,3 +460,32 @@ hr
 {
   margin-right: 1015px;
 }
+
+html {
+  overflow-x: hidden;
+}
+
+@media (max-width: 991.98px) { 
+  html {
+      overflow-x: auto;
+  }
+}
+
+/* colors */
+
+.bg-peach{
+  background-color: transparent;
+}
+
+.bg-peach:hover {
+  background-color: peachpuff;
+}
+
+
+.text-teal {
+  color: teal;
+}
+
+.border-teal {
+  border-top: 25px solid teal;
+}
