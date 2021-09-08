@@ -10,7 +10,7 @@ body {
   overflow: hidden;
 }
 
-.tinder {
+.tinder2 {
   width: 50vw;
   height: 50vh;
   overflow: hidden;
@@ -20,7 +20,7 @@ body {
 }
 
 
-.loaded.tinder {
+.loaded.tinder2 {
   opacity: 1;
 }
 
@@ -54,11 +54,11 @@ body {
   transform: scale(1);
 }
 
-.tinder--cards {
+.tinder--cards2 {
   z-index: 1;
 }
 
-.tinder--card {
+.tinder--card2 {
   display: inline-block;
   background: #ffffff;
   border-radius: 8px;
@@ -71,25 +71,25 @@ body {
   cursor: grab;
 }
 
-.moving.tinder--card {
+.moving.tinder--card2 {
   transition: none;
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
 }
 
-.tinder--card img {
+.tinder--card2 img {
   max-width: 100%;
   pointer-events: none;
 }
 
-.tinder--card h3 {
+.tinder--card2 h3 {
   margin-top: 32px;
   padding: 0 16px;
   pointer-events: none;
 }
 
-.tinder--card p {
+.tinder--card2 p {
   margin-top: 24px;
   padding: 0 16px;
   pointer-events: none;
