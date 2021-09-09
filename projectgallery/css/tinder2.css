@@ -24,7 +24,7 @@ body {
   opacity: 1;
 }
 
-.tinder--status {
+.tinder--status2 {
   position: absolute;
   top: 50%;
   margin-top: -30px;
@@ -34,7 +34,7 @@ body {
   pointer-events: none;
 }
 
-.tinder--status i {
+.tinder--status2 i {
   font-size: 100px;
   opacity: 0;
   transform: scale(0.3);
@@ -44,7 +44,7 @@ body {
   margin-left: -50px;
 }
 
-.tinder_love .fa-heart {
+.tinder_love2 .fa-heart {
   opacity: 0.7;
   transform: scale(1);
 }
@@ -95,13 +95,13 @@ body {
   pointer-events: none;
 }
 
-.tinder--buttons {
+.tinder--buttons2 {
   flex: 0 0 100px;
   text-align: center;
   padding-top: 20px;
 }
 
-.tinder--buttons button {
+.tinder--buttons2 button {
   border-radius: 50%;
   line-height: 60px;
   width: 60px;
@@ -111,11 +111,11 @@ body {
   margin: 0 8px;
 }
 
-.tinder--buttons button:focus {
+.tinder--buttons2 button:focus {
   outline: 0;
 }
 
-.tinder--buttons i {
+.tinder--buttons2 i {
   font-size: 32px;
   vertical-align: middle;
 }

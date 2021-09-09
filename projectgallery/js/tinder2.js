@@ -1,26 +1,26 @@
 "use strict";
 
-var tinderContainer = document.querySelector(".tinder2");
-var allCards = document.querySelectorAll(".tinder--card2");
-var nope = document.getElementById("nope");
-var love = document.getElementById("love");
+var tinderContainer2 = document.querySelector(".tinder2");
+var allCards2 = document.querySelectorAll(".tinder--card2");
+var nope2 = document.getElementById("nope2");
+var love2 = document.getElementById("love2");
 
-function initCards(card, index) { 
+function initCards2(card, index) { 
   var newCards = document.querySelectorAll(".tinder--card2:not(.removed)");
 
   newCards.forEach(function (card, index) {
-    card.style.zIndex = allCards.length - index;
+    card.style.zIndex = allCards2.length - index;
     card.style.transform =
       "scale(" + (20 - index) / 20 + ") translateY(-" + 30 * index + "px)";
     card.style.opacity = (10 - index) / 10;
   });
 
-  tinderContainer.classList.add("loaded");
+  tinderContainer2.classList.add("loaded");
 }
 
-initCards();
+initCards2();
 
-allCards.forEach(function (el) {
+allCards2.forEach(function (el) {
   var hammertime = new Hammer(el);
 
   hammertime.on("pan", function (event) {
@@ -31,8 +31,8 @@ allCards.forEach(function (el) {
     if (event.deltaX === 0) return;
     if (event.center.x === 0 && event.center.y === 0) return;
 
-    tinderContainer.classList.toggle("tinder_love", event.deltaX > 0);
-    tinderContainer.classList.toggle("tinder_nope", event.deltaX < 0);
+    tinderContainer2.classList.toggle("tinder_love2", event.deltaX > 0);
+    tinderContainer2.classList.toggle("tinder_nope2", event.deltaX < 0);
 
     var xMulti = event.deltaX * 0.03;
     var yMulti = event.deltaY / 80;
@@ -50,8 +50,8 @@ allCards.forEach(function (el) {
 
   hammertime.on("panend", function (event) {
     el.classList.remove("moving");
-    tinderContainer.classList.remove("tinder_love");
-    tinderContainer.classList.remove("tinder_nope");
+    tinderContainer2.classList.remove("tinder_love2");
+    tinderContainer2.classList.remove("tinder_nope2");
 
     var moveOutWidth = document.body.clientWidth;
     var keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
@@ -80,12 +80,12 @@ allCards.forEach(function (el) {
         "px) rotate(" +
         rotate +
         "deg)";
-      initCards();
+      initCards2();
     }
   });
 });
 
-function createButtonListener(love) {
+function createButtonListener(love2) {
   return function (event) {
     var cards = document.querySelectorAll(".tinder--card2:not(.removed)");
     var moveOutWidth = document.body.clientWidth * 1.5;
@@ -96,7 +96,7 @@ function createButtonListener(love) {
 
     card.classList.add("removed");
 
-    if (love) {
+    if (love2) {
       card.style.transform =
         "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
     } else {
@@ -104,14 +104,14 @@ function createButtonListener(love) {
         "translate(-" + moveOutWidth + "px, -100px) rotate(30deg)";
     }
 
-    initCards();
+    initCards2();
 
     event.preventDefault();
   };
 }
 
-var nopeListener = createButtonListener(false);
-var loveListener = createButtonListener(true);
+var nope2Listener = createButtonListener(false);
+var love2Listener = createButtonListener(true);
 
-nope.addEventListener("click", nopeListener);
-love.addEventListener("click", loveListener);
+nope2.addEventListener("click", nope2Listener);
+love2.addEventListener("click", love2Listener);
