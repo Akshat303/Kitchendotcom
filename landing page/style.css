@@ -12,6 +12,11 @@ body {
   color: #ffd9bf;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,6 +28,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-decoration: none;
+  height: 14rem;
   padding: 1rem 3rem;
 }
 
@@ -36,11 +42,13 @@ nav .brand {
 }
 
 nav .brand img {
+  position: absolute;
   margin-top: -1rem;
   margin-left: -3rem;
 }
 
 nav .brand .brand-name {
+  margin-left: 3rem;
   font-family: Open Sans;
   font-size: 2rem;
   font-style: normal;
@@ -58,11 +66,12 @@ nav .links {
 }
 
 nav .links li {
-  padding: 0 1rem;
+  padding: 0 2.5rem;
 }
 
 nav .links li a {
   color: #ffd9bf;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
@@ -79,7 +88,7 @@ nav .links li a {
 
 #punch-line p {
   font-family: "Alegreya", serif;
-  font-size: 48px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 65px;
@@ -88,7 +97,8 @@ nav .links li a {
 }
 
 #contents {
-  width: 60vw;
+  width: 50%;
+  padding: 0 2rem;
 }
 
 #contents .content {
@@ -98,7 +108,7 @@ nav .links li a {
 #contents .content .heading {
   padding-bottom: 0.5rem;
   font-family: "Alegreya", serif;
-  font-size: 35px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
@@ -108,21 +118,23 @@ nav .links li a {
 
 #contents .description {
   font-family: Open Sans;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  text-align: justify;
 }
 
 footer {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  padding: 2rem 4rem;
 }
 
 footer ul {
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,14 +145,15 @@ footer ul {
 }
 
 footer ul li {
+  font-size: 1.5rem;
   padding: 0 1rem;
 }
 
 #decorators {
   z-index: -1;
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   top: 0;
 }
 
@@ -156,5 +169,18 @@ footer ul li {
 #decorators .bg-image svg {
   position: absolute;
   height: inherit;
+  right: 0;
+}
+
+@media only screen and (max-width: 760px) {
+  #contents {
+    width: 100%;
+  }
+  nav .links li {
+    padding: 0 1rem;
+  }
+  nav .links li a {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
