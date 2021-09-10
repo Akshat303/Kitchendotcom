@@ -60,7 +60,7 @@ body {
 
 .tinder--card {
   display: inline-block;
-  background: #ffffff;
+  background: white;
   border-radius: 8px;
   overflow: hidden;
   position: absolute;
