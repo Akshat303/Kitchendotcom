@@ -122,15 +122,59 @@ body {
   right: 0;
 }
 
+#second .heading {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#second .content {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 #third {
   background-color: rgba(0, 102, 101, 0.13);
 }
 
-#third svg {
-  display: block;
+#third .decorators {
+  position: absolute;
   margin: -3rem;
-  margin-bottom: -20rem;
+}
+
+#third .decorators svg {
   width: 100vw;
+}
+
+#third .text-content {
+  position: relative;
+}
+
+#third .text-content .heading {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+#third .text-content .content {
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 #third .card {
@@ -153,6 +197,11 @@ body {
   overflow: hidden;
   -webkit-transform: translate(0, 50%);
           transform: translate(0, 50%);
+}
+
+#fourth .carousel-indicators {
+  position: relative;
+  top: 30px;
 }
 
 #fourth .gallery-container {
