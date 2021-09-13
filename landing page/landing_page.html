@@ -26,11 +26,10 @@
         <img src="./img/nav_lamp.png" alt="" />
         <a href="/"> <p class="brand-name">Kitchendotcom</p> </a>
       </div>
-      <ul class="links">
+      <ul id="nav-links" class="links">
         <li>
           <a href="">Aboutus</a>
         </li>
-        <a href=""> </a>
         <li>
           <a href="">Blog</a>
         </li>
@@ -38,6 +37,9 @@
           <a href="">Contactus</a>
         </li>
       </ul>
+      <div class="icon" onclick="navButton()">
+        <i class="fa fa-bars"></i>
+      </div>
     </nav>
 
     <section id="punch-line">
@@ -71,8 +73,32 @@
       </div>
     </section>
 
+    <footer>
+      <ul>
+        <li class="icon">
+          <a href="#"><i class="fab fa-facebook-f"></i> </a>
+        </li>
+        <li class="icon">
+          <a href="#"><i class="fab fa-twitter"></i> </a>
+        </li>
+        <li class="icon">
+          <a href="#">
+            <i style="font-weight: bold" class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+        <li class="icon">
+          <a href="#">
+            <i style="font-weight: bold" class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
     <section id="decorators">
-      <div class="bg-image">
+      <div class="bg-left">
+        <img src="./img/bg_graphics_C.svg" alt="" />
+      </div>
+      <div class="bg-right">
         <svg
           width="741"
           height="900"
@@ -106,17 +132,15 @@
       </div>
     </section>
 
-    <footer>
-      <ul>
-        <li class="icon"><i class="fab fa-facebook-f"></i></li>
-        <li class="icon"><i class="fab fa-twitter"></i></li>
-        <li class="icon">
-          <i style="font-weight: bold" class="fab fa-whatsapp"></i>
-        </li>
-        <li class="icon">
-          <i style="font-weight: bold" class="fab fa-instagram"></i>
-        </li>
-      </ul>
-    </footer>
+    <script>
+      function navButton() {
+        var x = document.getElementById("nav-links");
+        if (x.className === "links") {
+          x.className += " responsive";
+        } else {
+          x.className = "links";
+        }
+      }
+    </script>
   </body>
 </html>
