@@ -20,6 +20,7 @@
 /* Teal Bg, White Container */
 
 #main-theme {
+    min-width: 100%;
     background-image: url('/assets/img/bg-image.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -29,6 +30,7 @@
 }
 
 #layout {
+    min-width: 100%;
     background-image: url('/assets/img/bg-image.jpg');
     background-attachment: fixed;
     background-position: center;
